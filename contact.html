@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example Consulting Pvt. Ltd</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,6 +27,44 @@
         <p> Email-Id: <a href="">hello@gmail.com</a></p>
         <p>Phone No.: <a href="">+001-234-4567</a></p>
     </div>
+    <form method="POST">
+    <div>
+        <h2>Drop a Message</h2>
+        <p>Please drop a message by filling this form we will get back to you  </p>
+        <p>Fields marked with this is <span>*</span></p>
+
+        <label for="name">Your Name<span>*</span></label><br/>
+        <input type="text" id="name" placeholder="john Doe" required><br/>
+        <br>
+        <label for="email">Your Email-Id<span>*</span></label><br/>
+        <input type="email" id="name" placeholder="john@gmail.com" required><br>
+        <br>
+
+        <label for="drop">What are you looking to buy <span>*</span></label><br>
+        <select name="buy" id="drop" required>
+            <option value="" selected>- Choose one -</option>
+            <option value="blog">Blog</option>
+            <option value="store">Store</option>
+            <option value="game">Game</option>
+            <option value="other">Other</option>
+          </select>
+
+    </div>
+    <br>
+    <div>
+        <label for="platform">Platfrom you plan to support<span>*</span></label><br>
+        <input type="checkbox" value="Web" checked>Web
+        <input type="checkbox" value="Mobile">Mobile
+        <input type="checkbox" value="Desktop">Desktop
+    
+    </div>
+    <br>
+    <label for="add">Massage</label>
+    <textarea id="add"></textarea><br>
+
+    <button type="submit" value="Submit">Submit</button>
+    <button type="reset" value="reset">Reset</button>
+</form>
 
 <hr>
 <footer>
